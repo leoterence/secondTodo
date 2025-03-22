@@ -8,7 +8,7 @@ const links = [
   ];
   
 export default function Linkroute() {
-    let path = usePathname()
+    const path = usePathname()
   return (
    <div className='border-2 flex flex-row gap-2 mt-5'>
      {

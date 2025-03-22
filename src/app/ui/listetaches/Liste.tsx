@@ -1,5 +1,4 @@
 import Items from "./items"
-import Iems from "./items"
 
 interface Task {
   id:number,

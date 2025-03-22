@@ -1,6 +1,5 @@
 'use client'
 import {useState,useEffect} from 'react';
-import { DateTime } from 'luxon';
 import Linkroute from '../ui/navigate/Linkroute'
 interface Task {
   id:number,
@@ -10,7 +9,7 @@ interface Task {
   end : Date | null
 }
 
-export default function compled() {
+export default function Compled() {
   const[tasksc,setTasksc]=useState<Task[]>([])
   useEffect(()=>{
     if(typeof window !== 'undefined'){
