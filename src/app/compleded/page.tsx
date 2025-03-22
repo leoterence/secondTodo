@@ -33,7 +33,7 @@ export default function compled() {
   };
   
   function del(id:number){
-    setTasksc(tasksc.filter((task=>task.id!==id)))
+    setTasksc(tasksc.filter((task=> task.id!==id)))
   }
   const completTask=tasksc.filter((task:Task)=>task.completed!==false)
   return (
