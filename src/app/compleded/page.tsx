@@ -26,7 +26,7 @@ export default function compled() {
   
   return (
     <div className=" flex flex-col bg-red-500 box-border h-screen  ">
-       <button type="button" className=' bg-gray-200 rounded w-[30px] mt-2 ml-3'><Link href='/todo'><p className='text-xl '>&larr;</p></Link></button>
+       <button type="button" className=' bg-gray-200 rounded w-[30px] mt-2 ml-3'><Link href='/'><p className='text-xl '>&larr;</p></Link></button>
       <div className='w-11/12 min-h-96 border-2 mx-auto bg-gray-200 mt-10 flex flex-col rounded-xl  p-6 md:w-[600px]'>
         <ul>
           {
