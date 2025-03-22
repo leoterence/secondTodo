@@ -21,8 +21,6 @@ export default function Home() {
       const storage = localStorage.getItem('tasks')
     if(storage){
       setTasks(JSON.parse(storage))
-    } else {
-      console.log("Aucune tâche trouvée dans localStorage")
     }
     }
   },[])
