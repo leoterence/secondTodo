@@ -14,7 +14,7 @@ interface todopropos {
   tasks : Task[]
 }
 
-export default function todo({check,del,tasks}:todopropos) {
+export default function Todo({check,del,tasks}:todopropos) {
   
   const  Nwtask = tasks.filter(task=>task.completed !== true)
   return (

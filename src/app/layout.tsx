@@ -1,8 +1,9 @@
 import "./ui/globals.css";
 import MyApp from "./app";
-export default function RootLayout({children}: Readonly<{
-  children: React.ReactNode;
-}>) {
+import React from "react";
+
+export default function RootLayout({children}
+: Readonly<{ children: React.ReactNode;}>) {
   return (
     <html lang="en">
       <body>
