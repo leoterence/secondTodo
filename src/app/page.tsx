@@ -62,6 +62,7 @@ export default function Home() {
             <BareS onAdd={addT} task ={task} updata={setTask}/>
             <Linkroute/>
             <Todo check={check} del={del} tasks={tasks}/>
+            l
         </div>
     </div>
   );
