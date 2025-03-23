@@ -21,7 +21,7 @@ export default function Compled() {
   },[])
  
   useEffect(()=>{
-    console.log(tasksc)
+    localStorage.setItem('tasks',JSON.stringify(tasksc))
   },[tasksc])
 
   const formatDateTime = (date: Date | null) => {
