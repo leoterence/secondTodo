@@ -40,7 +40,7 @@ export default function Compled() {
     <div className=" flex flex-col bg-red-500 box-border h-screen  ">
       <div className='w-11/12 min-h-96 border-2 mx-auto bg-gray-200 mt-10 flex flex-col rounded-xl  items-center md:w-[600px]'>
       <Linkroute/>
-        <ul className='mt-5 p-1 border-2  border-green-500 w-11/12'>
+        <ul className='mt-5 p-1  w-11/12'>
           {
             completTask.map((task)=>{
               return(
