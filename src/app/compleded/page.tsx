@@ -20,11 +20,11 @@ export default function Compled() {
     }
   },[])
  
-  // useEffect(()=>{
-  //   if(typeof window !== 'undefined'){
-  //     localStorage.setItem('tasks',JSON.stringify(tasksc))
-  //   }
-  // },[tasksc])
+   useEffect(()=>{
+     if(typeof window !== 'undefined'){
+       localStorage.setItem('tasks',JSON.stringify(tasksc))
+     }
+   },[tasksc])
   const formatDateTime = (date: Date | null) => {
     if (!date) return '';
     const dateFormatted = new Date(date).toLocaleDateString()
