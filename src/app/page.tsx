@@ -53,9 +53,7 @@ export default function Home() {
   function del(id:number){
     setTasks(tasks.filter(task=>task.id !==id ))
   }
-  useEffect(()=>{
-    console.log(tasks)
-  },[tasks])
+  
 
   return (
     <div className="flex flex-col  items-center bg-red-500 box-border h-screen	 ">

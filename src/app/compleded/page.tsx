@@ -21,9 +21,10 @@ export default function Compled() {
   },[])
  
   useEffect(()=>{
-    localStorage.setItem('tasks',JSON.stringify(tasksc))
+    if(typeof window !== 'undefined'){
+      localStorage.setItem('tasks',JSON.stringify(tasksc))
+    }
   },[tasksc])
-
   const formatDateTime = (date: Date | null) => {
     if (!date) return '';
     const dateFormatted = new Date(date).toLocaleDateString()
@@ -32,7 +33,7 @@ export default function Compled() {
   };
   
   function del(id:number){
-    setTasksc(tasksc.filter((task=> task.id!==id)))
+    setTasksc(tasksc.filter(task=> task.id!==id))
   }
   const completTask=tasksc.filter((task:Task)=>task.completed!==false)
   return (
