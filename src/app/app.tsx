@@ -1,7 +1,12 @@
 // pages/_app.js
+import React, { ReactNode } from 'react';
 import {HeroUIProvider} from '@heroui/react'
 
-function MyApp({children}) {
+interface Myapppropos {
+  children :ReactNode
+}
+
+function MyApp({children}:Myapppropos) {
   return (
     <HeroUIProvider>
       {children}

@@ -1,7 +1,7 @@
 "use client"
 import BareS from "./ui/todoshear/bareS";
 import Linkroute from "./ui/navigate/Linkroute";
-import Todo from "./todo/page";
+import Todo from "./ui/todo";
 import {useEffect, useState} from  "react"
 
 interface Task {
